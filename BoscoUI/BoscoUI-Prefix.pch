@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'BoscoUI' target in the 'BoscoUI' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
