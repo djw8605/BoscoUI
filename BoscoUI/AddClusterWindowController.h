@@ -15,4 +15,12 @@
 @property (assign) IBOutlet NSWindow *addClusterWindow;
 @property (assign) IBOutlet NSProgressIndicator *progressIndicator;
 
+// Text boxes
+@property (assign) IBOutlet NSTextField *hostnameBox;
+@property (assign) IBOutlet NSTextField *usernameBox;
+@property (assign) IBOutlet NSTextField *passwordBox;
+
+// Click buttons
+- (IBAction)connectButtonClick:(id)sender;
+
 @end

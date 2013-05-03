@@ -17,5 +17,7 @@
 - (id)initWithName:(NSString*)name lrms:(NSString*)lrms status:(NSString*)status;
 
 + (NSMutableArray*)GetClusters;
++ (NSMutableDictionary*)SetEnvironment;
++ (BOOL)addClusterWithHostname:(NSString*)hostname lrms:(NSString*)lrms username:(NSString*)username password:(NSString*)password;
 
 @end

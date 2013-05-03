@@ -34,4 +34,15 @@
 
 }
 
+- (IBAction)connectButtonClick:(id)sender {
+    
+    if ( [[self.hostnameBox stringValue] length] == 0 ) {
+        NSColor* backgroundColor = [NSColor colorWithCalibratedHue:0.983 saturation:0.43 brightness:0.99 alpha:1.0];
+
+        [self.hostnameBox setBackgroundColor:backgroundColor];
+    }
+    
+}
+
+
 @end

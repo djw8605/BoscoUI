@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				ADEAE0161733678700CA8690 /* AddCluster */,
-				ADEAE00B17330C2700CA8690 /* Model */,
+				ADEAE00B17330C2700CA8690 /* Cluster */,
 				ADAA70851732E7090079EA28 /* AppDelegate.h */,
 				ADEAE0051733002400CA8690 /* MasterViewController.h */,
 				ADEAE0061733002400CA8690 /* MasterViewController.m */,
@@ -171,13 +171,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		ADEAE00B17330C2700CA8690 /* Model */ = {
+		ADEAE00B17330C2700CA8690 /* Cluster */ = {
 			isa = PBXGroup;
 			children = (
 				ADEAE00C17330C7000CA8690 /* ClusterData.h */,
 				ADEAE00D17330C7000CA8690 /* ClusterData.m */,
 			);
-			name = Model;
+			name = Cluster;
 			sourceTree = "<group>";
 		};
 		ADEAE0161733678700CA8690 /* AddCluster */ = {
