@@ -10,7 +10,7 @@
 #import "AddClusterWindowController.h"
 
 @interface MasterViewController : NSViewController {
-    AddClusterWindowController* addClusterWindow;
+    AddClusterWindowController* addClusterWindowTop;
 }
 
 

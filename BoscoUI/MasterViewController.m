@@ -17,7 +17,7 @@
 
 - (void)awakeFromNib
 {
-    NSLog(@"Creating stuff");
+    NSLog([[NSBundle mainBundle] bundlePath]);
     NSString *inFilePath = @"/Users/derekweitzel/BoscoUI/BoscoUI/BoscoUI/Images/BOSCO1.png";
     NSImage *testImage = [[NSImage alloc] initWithContentsOfFile:inFilePath];
     
@@ -67,7 +67,10 @@
 - (IBAction)addClusterButtonClick:(id)sender {
     
     
-    addClusterWindow = [[AddClusterWindowController alloc] initWithWindowNibName:@"AddClusterWindowController"];
-    [addClusterWindow showWindow:self];
+    addClusterWindowTop = [[AddClusterWindowController alloc] initWithWindowNibName:@"AddClusterWindowController"];
+    [addClusterWindowTop showWindow:self];
+    //[self.addClusterButton ];
+    
+    //[addClusterWindow makeKeyAndOrderFront:self.addClusterButton];
 }
 @end
