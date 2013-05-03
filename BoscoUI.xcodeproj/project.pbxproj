@@ -17,6 +17,9 @@
 		ADAA70931732E7090079EA28 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAA70731732E7090079EA28 /* Cocoa.framework */; };
 		ADAA709B1732E7090079EA28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAA70991732E7090079EA28 /* InfoPlist.strings */; };
 		ADAA709E1732E7090079EA28 /* BoscoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA709D1732E7090079EA28 /* BoscoUITests.m */; };
+		ADEAE0081733002400CA8690 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE0061733002400CA8690 /* MasterViewController.m */; };
+		ADEAE0091733002400CA8690 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADEAE0071733002400CA8690 /* MasterViewController.xib */; };
+		ADEAE00E17330C7000CA8690 /* ClusterData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE00D17330C7000CA8690 /* ClusterData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,11 @@
 		ADAA709A1732E7090079EA28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ADAA709C1732E7090079EA28 /* BoscoUITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoscoUITests.h; sourceTree = "<group>"; };
 		ADAA709D1732E7090079EA28 /* BoscoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoscoUITests.m; sourceTree = "<group>"; };
+		ADEAE0051733002400CA8690 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		ADEAE0061733002400CA8690 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		ADEAE0071733002400CA8690 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		ADEAE00C17330C7000CA8690 /* ClusterData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterData.h; sourceTree = "<group>"; };
+		ADEAE00D17330C7000CA8690 /* ClusterData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +122,11 @@
 		ADAA70791732E7090079EA28 /* BoscoUI */ = {
 			isa = PBXGroup;
 			children = (
+				ADEAE00B17330C2700CA8690 /* Model */,
 				ADAA70851732E7090079EA28 /* AppDelegate.h */,
+				ADEAE0051733002400CA8690 /* MasterViewController.h */,
+				ADEAE0061733002400CA8690 /* MasterViewController.m */,
+				ADEAE0071733002400CA8690 /* MasterViewController.xib */,
 				ADAA70861732E7090079EA28 /* AppDelegate.m */,
 				ADAA70881732E7090079EA28 /* MainMenu.xib */,
 				ADAA707A1732E7090079EA28 /* Supporting Files */,
@@ -151,6 +163,15 @@
 				ADAA70991732E7090079EA28 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADEAE00B17330C2700CA8690 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADEAE00C17330C7000CA8690 /* ClusterData.h */,
+				ADEAE00D17330C7000CA8690 /* ClusterData.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +248,7 @@
 				ADAA707E1732E7090079EA28 /* InfoPlist.strings in Resources */,
 				ADAA70841732E7090079EA28 /* Credits.rtf in Resources */,
 				ADAA708A1732E7090079EA28 /* MainMenu.xib in Resources */,
+				ADEAE0091733002400CA8690 /* MasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +285,8 @@
 			files = (
 				ADAA70801732E7090079EA28 /* main.m in Sources */,
 				ADAA70871732E7090079EA28 /* AppDelegate.m in Sources */,
+				ADEAE0081733002400CA8690 /* MasterViewController.m in Sources */,
+				ADEAE00E17330C7000CA8690 /* ClusterData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +470,7 @@
 				ADAA70A31732E7090079EA28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADAA70A41732E7090079EA28 /* Build configuration list for PBXNativeTarget "BoscoUITests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +479,7 @@
 				ADAA70A61732E7090079EA28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

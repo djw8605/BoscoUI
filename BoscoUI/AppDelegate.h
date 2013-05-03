@@ -7,9 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#include "MasterViewController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (nonatomic,strong) IBOutlet MasterViewController *masterViewController;
+
 @property (assign) IBOutlet NSWindow *window;
+
+@property (weak) IBOutlet NSButton *AddClusterButton;
+
+- (IBAction)AddClusterButtonClick:(id)sender;
+
+@property (weak) IBOutlet NSScrollView *ClusterList;
 
 @end
