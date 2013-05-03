@@ -17,9 +17,11 @@
 
 - (void)awakeFromNib
 {
-    NSLog([[NSBundle mainBundle] bundlePath]);
-    NSString *inFilePath = @"/Users/derekweitzel/BoscoUI/BoscoUI/BoscoUI/Images/BOSCO1.png";
-    NSImage *testImage = [[NSImage alloc] initWithContentsOfFile:inFilePath];
+    NSMutableString *image_path = [[NSMutableString alloc] initWithString:[[NSBundle mainBundle] bundlePath]];
+    [image_path appendString:@"/"];
+    [image_path appendString:@"Contents/Resources/BOSCO1.png"];
+    //NSString *inFilePath = @"/Users/derekweitzel/BoscoUI/BoscoUI/BoscoUI/Images/BOSCO1.png";
+    NSImage *testImage = [[NSImage alloc] initWithContentsOfFile:image_path];
     
     [self.imageView setImage:testImage];
 
