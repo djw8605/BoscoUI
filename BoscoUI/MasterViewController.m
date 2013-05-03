@@ -8,10 +8,9 @@
 
 #import "MasterViewController.h"
 #import "ClusterData.h"
+#import "AddClusterWindowController.h"
 
-@interface MasterViewController ()
 
-@end
 
 @implementation MasterViewController
 
@@ -59,9 +58,16 @@
 
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
-    NSLog(@"Called count, %i", [self.clusters count]);
+    NSLog(@"Called count, %li", [self.clusters count]);
     return [self.clusters count];
     
 }
 
+
+- (IBAction)addClusterButtonClick:(id)sender {
+    
+    
+    addClusterWindow = [[AddClusterWindowController alloc] initWithWindowNibName:@"AddClusterWindowController"];
+    [addClusterWindow showWindow:self];
+}
 @end

@@ -7,11 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "AddClusterWindowController.h"
 
-@interface MasterViewController : NSViewController
+@interface MasterViewController : NSViewController {
+    AddClusterWindowController* addClusterWindow;
+}
 
+
+- (IBAction)addClusterButtonClick:(id)sender;
 
 @property (strong) NSMutableArray *clusters;
 @property (nonatomic, strong) IBOutlet NSImageView* imageView;
+@property (weak) IBOutlet NSButton *addClusterButton;
+
 
 @end

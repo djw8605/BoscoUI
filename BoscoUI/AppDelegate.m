@@ -31,10 +31,6 @@
     
 }
 
-- (IBAction)AddClusterButtonClick:(id)sender {
-    NSLog(@"Test Button Click!");
-    
-}
 
 
 

@@ -15,10 +15,5 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
-@property (weak) IBOutlet NSButton *AddClusterButton;
-
-- (IBAction)AddClusterButtonClick:(id)sender;
-
-@property (weak) IBOutlet NSScrollView *ClusterList;
 
 @end

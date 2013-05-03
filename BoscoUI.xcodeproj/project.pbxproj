@@ -20,6 +20,8 @@
 		ADEAE0081733002400CA8690 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE0061733002400CA8690 /* MasterViewController.m */; };
 		ADEAE0091733002400CA8690 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADEAE0071733002400CA8690 /* MasterViewController.xib */; };
 		ADEAE00E17330C7000CA8690 /* ClusterData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE00D17330C7000CA8690 /* ClusterData.m */; };
+		ADEAE01D17337BCD00CA8690 /* AddClusterWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE01B17337BCD00CA8690 /* AddClusterWindowController.m */; };
+		ADEAE01E17337BCD00CA8690 /* AddClusterWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADEAE01C17337BCD00CA8690 /* AddClusterWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		ADEAE0071733002400CA8690 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
 		ADEAE00C17330C7000CA8690 /* ClusterData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterData.h; sourceTree = "<group>"; };
 		ADEAE00D17330C7000CA8690 /* ClusterData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterData.m; sourceTree = "<group>"; };
+		ADEAE01A17337BCD00CA8690 /* AddClusterWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClusterWindowController.h; sourceTree = "<group>"; };
+		ADEAE01B17337BCD00CA8690 /* AddClusterWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClusterWindowController.m; sourceTree = "<group>"; };
+		ADEAE01C17337BCD00CA8690 /* AddClusterWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddClusterWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +127,7 @@
 		ADAA70791732E7090079EA28 /* BoscoUI */ = {
 			isa = PBXGroup;
 			children = (
+				ADEAE0161733678700CA8690 /* AddCluster */,
 				ADEAE00B17330C2700CA8690 /* Model */,
 				ADAA70851732E7090079EA28 /* AppDelegate.h */,
 				ADEAE0051733002400CA8690 /* MasterViewController.h */,
@@ -172,6 +178,16 @@
 				ADEAE00D17330C7000CA8690 /* ClusterData.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		ADEAE0161733678700CA8690 /* AddCluster */ = {
+			isa = PBXGroup;
+			children = (
+				ADEAE01A17337BCD00CA8690 /* AddClusterWindowController.h */,
+				ADEAE01B17337BCD00CA8690 /* AddClusterWindowController.m */,
+				ADEAE01C17337BCD00CA8690 /* AddClusterWindowController.xib */,
+			);
+			name = AddCluster;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +265,7 @@
 				ADAA70841732E7090079EA28 /* Credits.rtf in Resources */,
 				ADAA708A1732E7090079EA28 /* MainMenu.xib in Resources */,
 				ADEAE0091733002400CA8690 /* MasterViewController.xib in Resources */,
+				ADEAE01E17337BCD00CA8690 /* AddClusterWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +304,7 @@
 				ADAA70871732E7090079EA28 /* AppDelegate.m in Sources */,
 				ADEAE0081733002400CA8690 /* MasterViewController.m in Sources */,
 				ADEAE00E17330C7000CA8690 /* ClusterData.m in Sources */,
+				ADEAE01D17337BCD00CA8690 /* AddClusterWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
