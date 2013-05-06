@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD481A05173424BF0073FFEC /* BOSCO1.png in Resources */ = {isa = PBXBuildFile; fileRef = AD481A04173424BF0073FFEC /* BOSCO1.png */; };
+		AD481E3317377ACC0073FFEC /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AD481E3217377ACC0073FFEC /* MAAttachedWindow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD481E3717377B1A0073FFEC /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD481E3617377B1A0073FFEC /* ErrorView.xib */; };
+		AD481E3A17377BB70073FFEC /* ErrorDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD481E3917377BB70073FFEC /* ErrorDisplayViewController.m */; };
 		ADAA70741732E7090079EA28 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAA70731732E7090079EA28 /* Cocoa.framework */; };
 		ADAA707E1732E7090079EA28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAA707C1732E7090079EA28 /* InfoPlist.strings */; };
 		ADAA70801732E7090079EA28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA707F1732E7090079EA28 /* main.m */; };
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD481A04173424BF0073FFEC /* BOSCO1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BOSCO1.png; path = Images/BOSCO1.png; sourceTree = "<group>"; };
+		AD481E3117377ACC0073FFEC /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
+		AD481E3217377ACC0073FFEC /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
+		AD481E3617377B1A0073FFEC /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ErrorView.xib; path = ../ErrorView.xib; sourceTree = "<group>"; };
+		AD481E3817377BB70073FFEC /* ErrorDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorDisplayViewController.h; sourceTree = "<group>"; };
+		AD481E3917377BB70073FFEC /* ErrorDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorDisplayViewController.m; sourceTree = "<group>"; };
 		ADAA706F1732E7090079EA28 /* BoscoUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoscoUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAA70731732E7090079EA28 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		ADAA70761732E7090079EA28 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -85,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD481A07173424CA0073FFEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD481A04173424BF0073FFEC /* BOSCO1.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		ADAA70641732E7090079EA28 = {
 			isa = PBXGroup;
 			children = (
@@ -127,11 +145,14 @@
 		ADAA70791732E7090079EA28 /* BoscoUI */ = {
 			isa = PBXGroup;
 			children = (
+				AD481A07173424CA0073FFEC /* Resources */,
 				ADEAE0161733678700CA8690 /* AddCluster */,
 				ADEAE00B17330C2700CA8690 /* Cluster */,
 				ADAA70851732E7090079EA28 /* AppDelegate.h */,
 				ADEAE0051733002400CA8690 /* MasterViewController.h */,
 				ADEAE0061733002400CA8690 /* MasterViewController.m */,
+				AD481E3117377ACC0073FFEC /* MAAttachedWindow.h */,
+				AD481E3217377ACC0073FFEC /* MAAttachedWindow.m */,
 				ADEAE0071733002400CA8690 /* MasterViewController.xib */,
 				ADAA70861732E7090079EA28 /* AppDelegate.m */,
 				ADAA70881732E7090079EA28 /* MainMenu.xib */,
@@ -183,9 +204,12 @@
 		ADEAE0161733678700CA8690 /* AddCluster */ = {
 			isa = PBXGroup;
 			children = (
+				AD481E3617377B1A0073FFEC /* ErrorView.xib */,
 				ADEAE01A17337BCD00CA8690 /* AddClusterWindowController.h */,
 				ADEAE01B17337BCD00CA8690 /* AddClusterWindowController.m */,
 				ADEAE01C17337BCD00CA8690 /* AddClusterWindowController.xib */,
+				AD481E3817377BB70073FFEC /* ErrorDisplayViewController.h */,
+				AD481E3917377BB70073FFEC /* ErrorDisplayViewController.m */,
 			);
 			name = AddCluster;
 			sourceTree = "<group>";
@@ -266,6 +290,8 @@
 				ADAA708A1732E7090079EA28 /* MainMenu.xib in Resources */,
 				ADEAE0091733002400CA8690 /* MasterViewController.xib in Resources */,
 				ADEAE01E17337BCD00CA8690 /* AddClusterWindowController.xib in Resources */,
+				AD481A05173424BF0073FFEC /* BOSCO1.png in Resources */,
+				AD481E3717377B1A0073FFEC /* ErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +331,8 @@
 				ADEAE0081733002400CA8690 /* MasterViewController.m in Sources */,
 				ADEAE00E17330C7000CA8690 /* ClusterData.m in Sources */,
 				ADEAE01D17337BCD00CA8690 /* AddClusterWindowController.m in Sources */,
+				AD481E3317377ACC0073FFEC /* MAAttachedWindow.m in Sources */,
+				AD481E3A17377BB70073FFEC /* ErrorDisplayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,9 +447,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BoscoUI/Rebel\"",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoscoUI/BoscoUI-Prefix.pch";
 				INFOPLIST_FILE = "BoscoUI/BoscoUI-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BoscoUI/Rebel/External/specta/test/vendor/expecta\"",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -431,9 +469,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BoscoUI/Rebel\"",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoscoUI/BoscoUI-Prefix.pch";
 				INFOPLIST_FILE = "BoscoUI/BoscoUI-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BoscoUI/Rebel/External/specta/test/vendor/expecta\"",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

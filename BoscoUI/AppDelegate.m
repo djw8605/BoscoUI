@@ -25,7 +25,8 @@
     
     // 2. Add the view controller to the Window's content view
     [self.window.contentView addSubview:self.masterViewController.view];
-    self.masterViewController.view.frame = ((NSView*)self.window.contentView).bounds;
+    ((NSView*)self.window.contentView).bounds = self.masterViewController.view.frame;
+    //self.masterViewController.view.frame = ((NSView*)self.window.contentView).bounds;
     
     
     

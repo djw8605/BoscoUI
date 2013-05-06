@@ -119,6 +119,7 @@
 
 + (BOOL)addClusterWithHostname:(NSString*)hostname lrms:(NSString*)lrms username:(NSString*)username password:(NSString*)password {
     
+    NSMutableDictionary *envdict = [ClusterData SetEnvironment];
     
     
     return TRUE;
