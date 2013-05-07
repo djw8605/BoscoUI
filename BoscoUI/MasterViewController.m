@@ -135,7 +135,7 @@
 
 - (IBAction)addClusterButtonClick:(id)sender {
     
-    NSLog(@"Button click");
+    //NSLog(@"Button click");
     addClusterWindowTop = [[AddClusterWindowController alloc] initWithWindowNibName:@"AddClusterWindowController"];
     [addClusterWindowTop showWindow:self];
     //[self.addClusterButton ];
