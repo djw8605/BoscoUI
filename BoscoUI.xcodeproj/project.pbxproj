@@ -11,6 +11,8 @@
 		AD481E3317377ACC0073FFEC /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AD481E3217377ACC0073FFEC /* MAAttachedWindow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD481E3717377B1A0073FFEC /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD481E3617377B1A0073FFEC /* ErrorView.xib */; };
 		AD481E3A17377BB70073FFEC /* ErrorDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD481E3917377BB70073FFEC /* ErrorDisplayViewController.m */; };
+		AD9BB24717397C6400309C2A /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB24617397C6400309C2A /* EDSideBar.m */; };
+		AD9BB24A17397FC200309C2A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9BB24917397FC200309C2A /* QuartzCore.framework */; };
 		ADAA70741732E7090079EA28 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAA70731732E7090079EA28 /* Cocoa.framework */; };
 		ADAA707E1732E7090079EA28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAA707C1732E7090079EA28 /* InfoPlist.strings */; };
 		ADAA70801732E7090079EA28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA707F1732E7090079EA28 /* main.m */; };
@@ -45,6 +47,9 @@
 		AD481E3617377B1A0073FFEC /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ErrorView.xib; path = ../ErrorView.xib; sourceTree = "<group>"; };
 		AD481E3817377BB70073FFEC /* ErrorDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorDisplayViewController.h; sourceTree = "<group>"; };
 		AD481E3917377BB70073FFEC /* ErrorDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorDisplayViewController.m; sourceTree = "<group>"; };
+		AD9BB24517397C6400309C2A /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
+		AD9BB24617397C6400309C2A /* EDSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSideBar.m; sourceTree = "<group>"; };
+		AD9BB24917397FC200309C2A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		ADAA706F1732E7090079EA28 /* BoscoUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoscoUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAA70731732E7090079EA28 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		ADAA70761732E7090079EA28 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -79,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9BB24A17397FC200309C2A /* QuartzCore.framework in Frameworks */,
 				ADAA70741732E7090079EA28 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +109,17 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		AD9BB24817397C7600309C2A /* ViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				AD9BB24517397C6400309C2A /* EDSideBar.h */,
+				AD9BB24617397C6400309C2A /* EDSideBar.m */,
+				AD481E3117377ACC0073FFEC /* MAAttachedWindow.h */,
+				AD481E3217377ACC0073FFEC /* MAAttachedWindow.m */,
+			);
+			name = ViewElements;
+			sourceTree = "<group>";
+		};
 		ADAA70641732E7090079EA28 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +142,7 @@
 		ADAA70721732E7090079EA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD9BB24917397FC200309C2A /* QuartzCore.framework */,
 				ADAA70731732E7090079EA28 /* Cocoa.framework */,
 				ADAA70911732E7090079EA28 /* SenTestingKit.framework */,
 				ADAA70751732E7090079EA28 /* Other Frameworks */,
@@ -145,14 +163,13 @@
 		ADAA70791732E7090079EA28 /* BoscoUI */ = {
 			isa = PBXGroup;
 			children = (
+				AD9BB24817397C7600309C2A /* ViewElements */,
 				AD481A07173424CA0073FFEC /* Resources */,
 				ADEAE0161733678700CA8690 /* AddCluster */,
 				ADEAE00B17330C2700CA8690 /* Cluster */,
 				ADAA70851732E7090079EA28 /* AppDelegate.h */,
 				ADEAE0051733002400CA8690 /* MasterViewController.h */,
 				ADEAE0061733002400CA8690 /* MasterViewController.m */,
-				AD481E3117377ACC0073FFEC /* MAAttachedWindow.h */,
-				AD481E3217377ACC0073FFEC /* MAAttachedWindow.m */,
 				ADEAE0071733002400CA8690 /* MasterViewController.xib */,
 				ADAA70861732E7090079EA28 /* AppDelegate.m */,
 				ADAA70881732E7090079EA28 /* MainMenu.xib */,
@@ -333,6 +350,7 @@
 				ADEAE01D17337BCD00CA8690 /* AddClusterWindowController.m in Sources */,
 				AD481E3317377ACC0073FFEC /* MAAttachedWindow.m in Sources */,
 				AD481E3A17377BB70073FFEC /* ErrorDisplayViewController.m in Sources */,
+				AD9BB24717397C6400309C2A /* EDSideBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

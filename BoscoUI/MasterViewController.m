@@ -24,16 +24,82 @@
     NSImage *testImage = [[NSImage alloc] initWithContentsOfFile:image_path];
     
     [self.imageView setImage:testImage];
-
+    
+    // Initialize the side bar
+    if (initializedSidebar != TRUE) {
+        [self.sideBar setLayoutMode:ECSideBarLayoutTop];
+        NSImage *selImage =[self buildSelectionImage];
+        [self.sideBar setSelectionImage:selImage];
+        
+        self.sideBar.animateSelection = YES;
+        self.sideBar.sidebarDelegate = self;
+        [self.sideBar addButtonWithTitle:@"Clusters"];
+        [self.sideBar addButtonWithTitle:@"Jobs"];
+        [self.sideBar selectButtonAtRow:0];
+        
+        self.sideBar.noiseAlpha = 0.04;
+        NSLog(@"starting...");
+        initializedSidebar = TRUE;
+    }
+    
+    
+    self.clustersView.frame  = NSMakeRect(120, 0, 325, 400);
+    self.jobsView.frame  = NSMakeRect(120, 0, 325, 400);
+    [self.view addSubview:self.clustersView];
+    
     
     
 }
+
+
+-(NSImage*)buildSelectionImage
+{
+	// Create the selection image on the fly, instead of loading from a file resource.
+	NSInteger imageWidth=12, imageHeight=22;
+	NSImage* destImage = [[NSImage alloc] initWithSize:NSMakeSize(imageWidth,imageHeight)];
+	[destImage lockFocus];
+	
+	
+	
+	// Constructing the path
+    NSBezierPath *triangle = [NSBezierPath bezierPath];
+	[triangle setLineWidth:1.0];
+    [triangle moveToPoint:NSMakePoint(imageWidth+1, 0.0)];
+    [triangle lineToPoint:NSMakePoint( 0, imageHeight/2.0)];
+    [triangle lineToPoint:NSMakePoint( imageWidth+1, imageHeight)];
+    [triangle closePath];
+	[[NSColor controlColor] setFill];
+	[[NSColor darkGrayColor] setStroke];
+	[triangle fill];
+	[triangle stroke];
+	[destImage unlockFocus];
+	return destImage;
+}
+
+
+-(void)sideBar:(EDSideBar*)tabBar didSelectButton:(NSInteger)button {
+
+    //NSLog(@"Clicked Button %i", button);
+    if (button == 0) {
+        [self.clustersView removeFromSuperview];
+        [self.jobsView removeFromSuperview];
+        [self.view addSubview:self.clustersView];
+    } else if (button == 1) {
+        [self.clustersView removeFromSuperview];
+        [self.jobsView removeFromSuperview];
+        [self.view addSubview:self.jobsView];
+    }
+    
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
+        
+
     }
     
     return self;

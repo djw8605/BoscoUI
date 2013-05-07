@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "AddClusterWindowController.h"
+#import "EDSideBar.h"
 
-@interface MasterViewController : NSViewController {
+@interface MasterViewController : NSViewController <EDSideBarDelegate> {
     AddClusterWindowController* addClusterWindowTop;
+    bool initializedSidebar;
 }
 
 
@@ -19,6 +21,9 @@
 @property (strong) NSMutableArray *clusters;
 @property (nonatomic, strong) IBOutlet NSImageView* imageView;
 @property (weak) IBOutlet NSButton *addClusterButton;
+@property (weak) IBOutlet EDSideBar *sideBar;
+@property (weak) IBOutlet NSView *clustersView;
+@property (weak) IBOutlet NSView *jobsView;
 
 
 @end
