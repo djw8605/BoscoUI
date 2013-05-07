@@ -43,8 +43,8 @@
     }
     
     
-    self.clustersView.frame  = NSMakeRect(120, 0, 325, 400);
-    self.jobsView.frame  = NSMakeRect(120, 0, 325, 400);
+    self.clustersView.frame  = NSMakeRect(120, 0, 480, 400);
+    self.jobsView.frame  = NSMakeRect(120, 0, 480, 400);
     [self.view addSubview:self.clustersView];
     
     
@@ -79,7 +79,7 @@
 
 -(void)sideBar:(EDSideBar*)tabBar didSelectButton:(NSInteger)button {
 
-    //NSLog(@"Clicked Button %i", button);
+    NSLog(@"Clicked Button %li", (long)button);
     if (button == 0) {
         [self.clustersView removeFromSuperview];
         [self.jobsView removeFromSuperview];
@@ -108,6 +108,7 @@
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     
+    
     // Get a new ViewCell
     NSTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
     
@@ -134,7 +135,7 @@
 
 - (IBAction)addClusterButtonClick:(id)sender {
     
-    
+    NSLog(@"Button click");
     addClusterWindowTop = [[AddClusterWindowController alloc] initWithWindowNibName:@"AddClusterWindowController"];
     [addClusterWindowTop showWindow:self];
     //[self.addClusterButton ];
