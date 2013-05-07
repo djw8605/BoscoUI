@@ -31,6 +31,10 @@
     NSMutableString *bosco_cluster = [[NSMutableString alloc] init];
     [bosco_cluster appendString:NSHomeDirectory()];
     [bosco_cluster appendString:@"/bosco/bin/bosco_cluster"];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:bosco_cluster]) {
+        // Bosco doesn't exist
+        return nil;
+    }
     [task setLaunchPath:bosco_cluster];
     //[task setLaunchPath: @"/bin/bash"];
     
