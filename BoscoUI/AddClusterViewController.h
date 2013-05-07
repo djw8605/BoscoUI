@@ -10,7 +10,7 @@
 #import "ErrorDisplayViewController.h"
 
 
-@interface AddClusterWindowController : NSWindowController
+@interface AddClusterViewController : NSViewController
 {
     ErrorDisplayViewController *error_display;
     

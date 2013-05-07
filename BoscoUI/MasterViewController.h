@@ -7,11 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "AddClusterWindowController.h"
+#import "AddClusterViewController.h"
 #import "EDSideBar.h"
 
 @interface MasterViewController : NSViewController <EDSideBarDelegate> {
-    AddClusterWindowController* addClusterWindowTop;
+    AddClusterViewController* addClusterWindowTop;
     bool initializedSidebar;
 }
 

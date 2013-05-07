@@ -6,43 +6,28 @@
 //  Copyright (c) 2013 Derek Weitzel. All rights reserved.
 //
 
-#import "AddClusterWindowController.h"
+#import "AddClusterViewController.h"
 #import "ClusterData.h"
 
 
-@interface AddClusterWindowController ()
+@interface AddClusterViewController ()
 
 @end
 
-@implementation AddClusterWindowController
+@implementation AddClusterViewController
 
-- (id)initWithWindow:(NSWindow *)window
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithWindow:window];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
         
-        
+        error_display = [[ErrorDisplayViewController alloc] initWithWindow:[[self view] window]];
     }
     
     return self;
 }
 
-- (void)windowDidLoad
-{
-    [super windowDidLoad];
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-    [self.progressIndicator incrementBy:20.0];
-    [self.addClusterWindow makeKeyWindow];
-    [self.addClusterWindow makeKeyAndOrderFront:self];
-    
-    // Change button appearance
-    //[self.connectButton setBezelStyle:NSRoundRectBezelStyle];
-    error_display = [[ErrorDisplayViewController alloc] initWithWindow:self.addClusterWindow];
-    
-
-}
 
 - (void)setErrorForTextField:(NSTextField*)errorField errorMessage:(NSString*)errorMessage {
     NSColor* backgroundColor = [NSColor colorWithCalibratedHue:0.983 saturation:0.43 brightness:0.99 alpha:1.0];

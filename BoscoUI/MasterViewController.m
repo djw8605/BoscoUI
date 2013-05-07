@@ -8,7 +8,7 @@
 
 #import "MasterViewController.h"
 #import "ClusterData.h"
-#import "AddClusterWindowController.h"
+#import "AddClusterViewController.h"
 
 
 
@@ -47,6 +47,10 @@
     self.jobsView.frame  = NSMakeRect(120, 0, 480, 400);
     [self.view addSubview:self.clustersView];
     
+    // Add the Add Cluster View
+    addClusterWindowTop = [[AddClusterViewController alloc] initWithNibName:@"AddClusterViewController" bundle:nil];
+    [addClusterWindowTop view].frame = NSMakeRect(260, 60, 215, 300);
+    [self.clustersView addSubview:[addClusterWindowTop view]];
     
     
 }
@@ -136,8 +140,8 @@
 - (IBAction)addClusterButtonClick:(id)sender {
     
     //NSLog(@"Button click");
-    addClusterWindowTop = [[AddClusterWindowController alloc] initWithWindowNibName:@"AddClusterWindowController"];
-    [addClusterWindowTop showWindow:self];
+    //addClusterWindowTop = [[AddClusterViewController alloc] initWithWindowNibName:@"AddClusterWindowController"];
+    //[addClusterWindowTop showWindow:self];
     //[self.addClusterButton ];
     
     //[addClusterWindow makeKeyAndOrderFront:self.addClusterButton];

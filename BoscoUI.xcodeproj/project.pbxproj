@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AD481A05173424BF0073FFEC /* BOSCO1.png in Resources */ = {isa = PBXBuildFile; fileRef = AD481A04173424BF0073FFEC /* BOSCO1.png */; };
 		AD481E3317377ACC0073FFEC /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AD481E3217377ACC0073FFEC /* MAAttachedWindow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		AD481E3717377B1A0073FFEC /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD481E3617377B1A0073FFEC /* ErrorView.xib */; };
 		AD481E3A17377BB70073FFEC /* ErrorDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD481E3917377BB70073FFEC /* ErrorDisplayViewController.m */; };
 		AD9BB24717397C6400309C2A /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB24617397C6400309C2A /* EDSideBar.m */; };
 		AD9BB24A17397FC200309C2A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9BB24917397FC200309C2A /* QuartzCore.framework */; };
@@ -26,8 +25,8 @@
 		ADEAE0081733002400CA8690 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE0061733002400CA8690 /* MasterViewController.m */; };
 		ADEAE0091733002400CA8690 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADEAE0071733002400CA8690 /* MasterViewController.xib */; };
 		ADEAE00E17330C7000CA8690 /* ClusterData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE00D17330C7000CA8690 /* ClusterData.m */; };
-		ADEAE01D17337BCD00CA8690 /* AddClusterWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE01B17337BCD00CA8690 /* AddClusterWindowController.m */; };
-		ADEAE01E17337BCD00CA8690 /* AddClusterWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADEAE01C17337BCD00CA8690 /* AddClusterWindowController.xib */; };
+		ADEAE01D17337BCD00CA8690 /* AddClusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE01B17337BCD00CA8690 /* AddClusterViewController.m */; };
+		ADEAE01E17337BCD00CA8690 /* AddClusterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADEAE01C17337BCD00CA8690 /* AddClusterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +43,6 @@
 		AD481A04173424BF0073FFEC /* BOSCO1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BOSCO1.png; path = Images/BOSCO1.png; sourceTree = "<group>"; };
 		AD481E3117377ACC0073FFEC /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		AD481E3217377ACC0073FFEC /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
-		AD481E3617377B1A0073FFEC /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ErrorView.xib; path = ../ErrorView.xib; sourceTree = "<group>"; };
 		AD481E3817377BB70073FFEC /* ErrorDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorDisplayViewController.h; sourceTree = "<group>"; };
 		AD481E3917377BB70073FFEC /* ErrorDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorDisplayViewController.m; sourceTree = "<group>"; };
 		AD9BB24517397C6400309C2A /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
@@ -74,9 +72,9 @@
 		ADEAE0071733002400CA8690 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
 		ADEAE00C17330C7000CA8690 /* ClusterData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterData.h; sourceTree = "<group>"; };
 		ADEAE00D17330C7000CA8690 /* ClusterData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterData.m; sourceTree = "<group>"; };
-		ADEAE01A17337BCD00CA8690 /* AddClusterWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClusterWindowController.h; sourceTree = "<group>"; };
-		ADEAE01B17337BCD00CA8690 /* AddClusterWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClusterWindowController.m; sourceTree = "<group>"; };
-		ADEAE01C17337BCD00CA8690 /* AddClusterWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddClusterWindowController.xib; sourceTree = "<group>"; };
+		ADEAE01A17337BCD00CA8690 /* AddClusterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClusterViewController.h; sourceTree = "<group>"; };
+		ADEAE01B17337BCD00CA8690 /* AddClusterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClusterViewController.m; sourceTree = "<group>"; };
+		ADEAE01C17337BCD00CA8690 /* AddClusterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddClusterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,10 +219,9 @@
 		ADEAE0161733678700CA8690 /* AddCluster */ = {
 			isa = PBXGroup;
 			children = (
-				AD481E3617377B1A0073FFEC /* ErrorView.xib */,
-				ADEAE01A17337BCD00CA8690 /* AddClusterWindowController.h */,
-				ADEAE01B17337BCD00CA8690 /* AddClusterWindowController.m */,
-				ADEAE01C17337BCD00CA8690 /* AddClusterWindowController.xib */,
+				ADEAE01A17337BCD00CA8690 /* AddClusterViewController.h */,
+				ADEAE01B17337BCD00CA8690 /* AddClusterViewController.m */,
+				ADEAE01C17337BCD00CA8690 /* AddClusterViewController.xib */,
 				AD481E3817377BB70073FFEC /* ErrorDisplayViewController.h */,
 				AD481E3917377BB70073FFEC /* ErrorDisplayViewController.m */,
 			);
@@ -306,9 +303,8 @@
 				ADAA70841732E7090079EA28 /* Credits.rtf in Resources */,
 				ADAA708A1732E7090079EA28 /* MainMenu.xib in Resources */,
 				ADEAE0091733002400CA8690 /* MasterViewController.xib in Resources */,
-				ADEAE01E17337BCD00CA8690 /* AddClusterWindowController.xib in Resources */,
+				ADEAE01E17337BCD00CA8690 /* AddClusterViewController.xib in Resources */,
 				AD481A05173424BF0073FFEC /* BOSCO1.png in Resources */,
-				AD481E3717377B1A0073FFEC /* ErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +343,7 @@
 				ADAA70871732E7090079EA28 /* AppDelegate.m in Sources */,
 				ADEAE0081733002400CA8690 /* MasterViewController.m in Sources */,
 				ADEAE00E17330C7000CA8690 /* ClusterData.m in Sources */,
-				ADEAE01D17337BCD00CA8690 /* AddClusterWindowController.m in Sources */,
+				ADEAE01D17337BCD00CA8690 /* AddClusterViewController.m in Sources */,
 				AD481E3317377ACC0073FFEC /* MAAttachedWindow.m in Sources */,
 				AD481E3A17377BB70073FFEC /* ErrorDisplayViewController.m in Sources */,
 				AD9BB24717397C6400309C2A /* EDSideBar.m in Sources */,
