@@ -12,6 +12,9 @@
 		AD481E3A17377BB70073FFEC /* ErrorDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD481E3917377BB70073FFEC /* ErrorDisplayViewController.m */; };
 		AD9BB24717397C6400309C2A /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB24617397C6400309C2A /* EDSideBar.m */; };
 		AD9BB24A17397FC200309C2A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9BB24917397FC200309C2A /* QuartzCore.framework */; };
+		AD9BB24D173D8C4000309C2A /* status_critical.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9BB24B173D8C4000309C2A /* status_critical.png */; };
+		AD9BB24E173D8C4000309C2A /* status_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9BB24C173D8C4000309C2A /* status_ok.png */; };
+		AD9BB250173D93BF00309C2A /* data-center.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9BB24F173D93BF00309C2A /* data-center.png */; };
 		ADAA70741732E7090079EA28 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAA70731732E7090079EA28 /* Cocoa.framework */; };
 		ADAA707E1732E7090079EA28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAA707C1732E7090079EA28 /* InfoPlist.strings */; };
 		ADAA70801732E7090079EA28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAA707F1732E7090079EA28 /* main.m */; };
@@ -48,6 +51,9 @@
 		AD9BB24517397C6400309C2A /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
 		AD9BB24617397C6400309C2A /* EDSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSideBar.m; sourceTree = "<group>"; };
 		AD9BB24917397FC200309C2A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AD9BB24B173D8C4000309C2A /* status_critical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = status_critical.png; path = Images/status_critical.png; sourceTree = "<group>"; };
+		AD9BB24C173D8C4000309C2A /* status_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = status_ok.png; path = Images/status_ok.png; sourceTree = "<group>"; };
+		AD9BB24F173D93BF00309C2A /* data-center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "data-center.png"; path = "Images/data-center.png"; sourceTree = "<group>"; };
 		ADAA706F1732E7090079EA28 /* BoscoUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoscoUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAA70731732E7090079EA28 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		ADAA70761732E7090079EA28 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -102,6 +108,9 @@
 		AD481A07173424CA0073FFEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AD9BB24F173D93BF00309C2A /* data-center.png */,
+				AD9BB24B173D8C4000309C2A /* status_critical.png */,
+				AD9BB24C173D8C4000309C2A /* status_ok.png */,
 				AD481A04173424BF0073FFEC /* BOSCO1.png */,
 			);
 			name = Resources;
@@ -305,6 +314,9 @@
 				ADEAE0091733002400CA8690 /* MasterViewController.xib in Resources */,
 				ADEAE01E17337BCD00CA8690 /* AddClusterViewController.xib in Resources */,
 				AD481A05173424BF0073FFEC /* BOSCO1.png in Resources */,
+				AD9BB24D173D8C4000309C2A /* status_critical.png in Resources */,
+				AD9BB24E173D8C4000309C2A /* status_ok.png in Resources */,
+				AD9BB250173D93BF00309C2A /* data-center.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +486,7 @@
 					"\"$(SRCROOT)/BoscoUI/Rebel/External/specta/test/vendor/expecta\"",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -496,6 +509,7 @@
 					"\"$(SRCROOT)/BoscoUI/Rebel/External/specta/test/vendor/expecta\"",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

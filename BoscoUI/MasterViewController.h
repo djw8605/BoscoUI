@@ -24,6 +24,7 @@
 @property (weak) IBOutlet EDSideBar *sideBar;
 @property (weak) IBOutlet NSView *clustersView;
 @property (weak) IBOutlet NSView *jobsView;
+@property (weak) IBOutlet NSTableView *clustersTable;
 
 
 @end

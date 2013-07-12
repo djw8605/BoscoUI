@@ -23,6 +23,15 @@
     //NSString *inFilePath = @"/Users/derekweitzel/BoscoUI/BoscoUI/BoscoUI/Images/BOSCO1.png";
     NSImage *testImage = [[NSImage alloc] initWithContentsOfFile:image_path];
     
+    //cellView.imageView.image = bugDoc.thumbImage;
+    image_path = [[NSMutableString alloc] initWithString:[[NSBundle mainBundle] bundlePath]];
+    [image_path appendString:@"/"];
+    [image_path appendString:@"Contents/Resources/data-center.png"];
+    //NSString *inFilePath = @"/Users/derekweitzel/BoscoUI/BoscoUI/BoscoUI/Images/BOSCO1.png";
+    NSImage *data_center = [[NSImage alloc] initWithContentsOfFile:image_path];
+    [data_center setSize:NSMakeSize(64, 64)];
+    [data_center setScalesWhenResized:TRUE];
+    
     [self.imageView setImage:testImage];
     
     // Initialize the side bar
@@ -33,7 +42,8 @@
         
         self.sideBar.animateSelection = YES;
         self.sideBar.sidebarDelegate = self;
-        [self.sideBar addButtonWithTitle:@"Clusters"];
+        [self.sideBar addButtonWithTitle:@"Clusters" image:data_center];
+        //[self.sideBar addButtonWithTitle:@"Clusters"];
         [self.sideBar addButtonWithTitle:@"Jobs"];
         [self.sideBar selectButtonAtRow:0];
         
@@ -122,11 +132,26 @@
     {
         ClusterData *clusterDoc = [self.clusters objectAtIndex:row];
         //cellView.imageView.image = bugDoc.thumbImage;
+        NSMutableString *image_path = [[NSMutableString alloc] initWithString:[[NSBundle mainBundle] bundlePath]];
+        [image_path appendString:@"/"];
+        [image_path appendString:@"Contents/Resources/status_ok.png"];
+        //NSString *inFilePath = @"/Users/derekweitzel/BoscoUI/BoscoUI/BoscoUI/Images/BOSCO1.png";
+        NSImage *testImage = [[NSImage alloc] initWithContentsOfFile:image_path];
+
         cellView.textField.stringValue = clusterDoc.name;
+        cellView.imageView.image = testImage;
         return cellView;
     }
     NSLog(@"Called view");
     return cellView;
+}
+
+
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification {
+    
+    NSInteger selectedRow = [self.clustersTable selectedRow];
+    NSLog(@"You selected row: %li", (long)selectedRow);
+    
 }
 
 
